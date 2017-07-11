@@ -1,0 +1,17 @@
+group 'mypack'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-context:4.3.9.RELEASE'
+    compile("org.springframework:spring-jdbc:4.3.9.RELEASE")
+    compile("org.springframework:spring-aspects:4.3.9.RELEASE")
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.13'
+}
