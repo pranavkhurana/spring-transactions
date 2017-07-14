@@ -38,6 +38,5 @@ public class Application {
         //Solution 4 and 6
         accountService.transfer(list.get(listLength-1),list.get(listLength-3),1000);
 
-        //
     }
 }
